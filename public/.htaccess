@@ -1,0 +1,9 @@
+Options -Multiviews
+RewriteEngine On
+RewriteBase /
+#If request don't match a file then continue
+RewriteCond %{REQUEST_FILENAME} !-f
+#If request don't match a directory then continue
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
