@@ -15,6 +15,7 @@ class Testing {
 
     function __construct() {
         echo 'Testing';
+        echo "MergeTest";
     }
 
 }
